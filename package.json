@@ -1,0 +1,24 @@
+{
+  "name": "rx-request",
+  "version": "0.0.1",
+  "description": "A little lego block which can be used to build connections to web services that produce Rx.Obserervables.",
+  "main": "RxRequest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonboylailam/rx-request.git"
+  },
+  "author": "Jon Lai Lam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonboylailam/rx-request/issues"
+  },
+  "homepage": "https://github.com/jonboylailam/rx-request#readme",
+  "dependencies": {
+    "request-json": "^0.5.3",
+    "rx": "^2.5.3",
+    "stampit": "^2.1.0"
+  }
+}
