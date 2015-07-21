@@ -34,6 +34,20 @@ rxRequest = rxRequest.methods({
                 observer.onCompleted();
             });
         });
+    },
+    post: function (req, data) {
+        var client = this.getClient();
+        return Rx.Observable.create(function (observer) {
+            var urlStr = url.format(req);
+            client.post(urlStr, data, function (err, res, ans) {
+                if (err) observer.onError(err);
+
+                console.log("url: %s dataIn: %s response: %s",
+                    urlStr, JSON.stringify(data), JSON.stringify(ans));
+                observer.onNext(ans);
+                observer.onCompleted();
+            });
+        });
     }
 });
 

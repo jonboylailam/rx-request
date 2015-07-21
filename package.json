@@ -1,6 +1,6 @@
 {
   "name": "rx-request",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A little lego block which can be used to build connections to web services that produce Rx.Obserervables.",
   "main": "RxRequest.js",
   "scripts": {
